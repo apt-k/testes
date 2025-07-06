@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redvengers | Forum Donor Darah</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" 
+          crossorigin="anonymous"></script>
+    <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #921A40;">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="margin-left: 2%;" href="#">RedVengers</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0" style="margin-left: 58%;">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="donorPedia.html">Donor Pedia</a></li>
+            <li class="nav-item"><a class="nav-link" href="stok.html">Stok Darah</a></li>
+            <li class="nav-item"><a class="nav-link" href="event.html">Event</a></li>
+            <li class="nav-item"><a class="nav-link" href="forum.html">Forum Diskusi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+<main class="container mt-5 pt-5">
+
+  <!-- Kritik & Saran -->
+  <section class="card my-4 p-4">
+    <h2 class="text-danger">Kritik & Saran</h2>
+    <form id="feedback-form" class="mb-3">
+      <input type="text" id="nama" class="form-control mb-2" placeholder="Nama Anda" required>
+      <textarea id="pesan" class="form-control mb-2" placeholder="Tulis kritik atau saran Anda..." required></textarea>
+      <button type="submit" class="btn btn-danger">Kirim</button>
+    </form>
+    <ul class="list-group" id="daftar-feedback">
+      <li class="list-group-item"><strong>Salsa:</strong> Web ini sangat membantu! 👍</li>
+      <li class="list-group-item"><strong>Raka:</strong> Sangat informatif dan bantu saya yang baru pertama donor 😍</li>
+      <li class="list-group-item"><strong>Gilang:</strong> Tambahin notifikasi jadwal donor dong min</li>
+      <li class="list-group-item"><strong>Salsa:</strong> Kalo ada fitur live chat keren banget!</li>
+    </ul>
+  </section>
+
+  <!-- Q&A -->
+  <section class="card my-4 p-4">
+    <h2 class="text-danger">Q&A</h2>
+    <form id="faq-form" class="mb-3">
+      <input type="text" id="nama-penanya" class="form-control mb-2" placeholder="Nama Anda..." required>
+      <input type="text" id="pertanyaan" class="form-control mb-2" placeholder="Tulis pertanyaan Anda..." required>
+      <button type="submit" class="btn btn-danger">Tanya</button>
+    </form>
+
+    <div id="daftar-qa">
+      <div class="border-start border-danger ps-3 mb-3">
+        <p><strong>Tania:</strong> Saya baru sembuh dari flu, bisa donor ga ya?</p>
+        <p><strong>Jelly:</strong> Tunggu minimal 14 hari setelah sembuh total ya kak.</p>
+        <button class="btn btn-outline-danger btn-sm">Balas</button>
+      </div>
+      <div class="border-start border-danger ps-3 mb-3">
+        <p><strong>Yoga:</strong> BB aku cuma 45kg, aman nggak untuk donor?</p>
+        <p><strong>Febri:</strong> Jangan dulu kak, minimal 50kg ya demi keselamatan.</p>
+        <button class="btn btn-outline-danger btn-sm">Balas</button>
+      </div>
+      <div class="border-start border-danger ps-3 mb-3">
+        <p><strong>Rina:</strong> Bisa donor pas lagi haid nggak?</p>
+        <p><strong>Mirna:</strong> Sebaiknya tunggu selesai haid dulu biar badan fit kak.</p>
+        <button class="btn btn-outline-danger btn-sm">Balas</button>
+      </div>
+      <div class="border-start border-danger ps-3 mb-3">
+        <p><strong>Dito:</strong> Donor darah bikin gemuk?</p>
+        <p><strong>Alamsyah:</strong> Mitos tuh! Donor darah nggak bikin berat badan naik.</p>
+        <button class="btn btn-outline-danger btn-sm">Balas</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review -->
+  <section class="card my-4 p-4">
+    <h2 class="text-danger">Review Pengalaman Donor</h2>
+    <form id="review-form" class="mb-3">
+      <input type="text" id="nama-review" class="form-control mb-2" placeholder="Nama Anda" required>
+      <textarea id="isi-review" class="form-control mb-2" placeholder="Bagikan pengalaman Anda..." required></textarea>
+      <select id="rating" class="form-select mb-2" required>
+        <option value="">Pilih rating</option>
+        <option value="5">⭐⭐⭐⭐⭐</option>
+        <option value="4">⭐⭐⭐⭐</option>
+        <option value="3">⭐⭐⭐</option>
+        <option value="2">⭐⭐</option>
+        <option value="1">⭐</option>
+      </select>
+      <button type="submit" class="btn btn-danger">Kirim Review</button>
+    </form>
+    <ul class="list-group" id="daftar-review">
+      <li class="list-group-item"><strong>Andi</strong> (5⭐): Donor di Redvengers cepat & ramah!</li>
+      <li class="list-group-item"><strong>Bella</strong> (4⭐): Tempatnya nyaman dan bersih!</li>
+      <li class="list-group-item"><strong>Budi</strong> (3⭐): Konfirmasi email sempat error kemarin.</li>
+    </ul>
+  </section>
+</main>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<footer class="text-white pt-4 pb-3 mt-5" style="background-color: #921A40;">
+  <div class="container">
+    <div class="row">
+      <!-- Kolom 1: Brand -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">RedVengers</h5>
+        <p class="small">Bersama kita selamatkan nyawa melalui kebaikan.</p>
+      </div>
+
+      <!-- Kolom 2: Tentang Kami -->
+      <div class="col-md-4 mb-3">
+        <h6 class="fw-bold">Tentang Kami</h6>
+        <ul class="list-unstyled small">
+          <li>Rahma Apta K. (24.12.3266)</li>
+          <li>Anindya Nada F. (24.12.3267)</li>
+          <li>Andhara Elirica A. P. (24.12.3247)</li>
+          <li>Najwa Kh Azz (24.12.3256)</li>
+          <li>Revalia Zalzabila Andriana (24.12.3268)</li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Hubungi Kami -->
+      <div class="col-md-4 mb-3">
+        <h6 class="fw-bold">Hubungi Kami</h6>
+        <ul class="list-unstyled small">
+          <li><i class="bi bi-whatsapp"></i> 0812-3456-7890</li>
+          <li><i class="bi bi-envelope"></i> redvengers@email.com</li>
+          <li><i class="bi bi-instagram"></i> @redvengers.id</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Garis Horizontal -->
+    <hr class="border-light opacity-50" />
+
+    <!-- Copyright -->
+    <div class="text-center small">
+      &copy; <span id="tahun"></span> RedVengers. Semua hak cipta dilindungi.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Tahun Otomatis
+  document.getElementById("tahun").textContent = new Date().getFullYear();
+</script>
+
+<script src="scriptforum.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
