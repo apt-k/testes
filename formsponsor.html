@@ -1,62 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Sponsor</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="form2.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Form Sponsor</h2>
-        <form id="formSponsor" novalidate>
-            <div class="mb-3">
-                <label for="namaSponsor" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="namaSponsor" required />
-                <div class="invalid-feedback">Nama harus diisi.</div>
-            </div>
 
-            <div class="mb-3">
-                <label for="emailSponsor" class="form-label">Email</label>
-                <input type="email" class="form-control" id="emailSponsor" required />
-                <div class="invalid-feedback">Masukkan email yang valid.</div>
+     <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="background-color: #921A40;">
+            <div class="container">
+                <a class="navbar-brand" href="#">RedVengers</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0" style="margin-left: 58%;">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="donorPedia.html">Donor Pedia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="stok.html">Stok Darah</a></li>
+                        <li class="nav-item"><a class="nav-link" href="event.html">Event</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forum.html">Forum Diskusi</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
 
-            <div class="mb-3">
-                <label for="teleponSponsor" class="form-label">No. Telepon</label>
-                <input type="tel" class="form-control" id="teleponSponsor" pattern="[0-9]{10,15}" required />
-                <div class="invalid-feedback">Masukkan nomor telepon yang benar (10–15 digit).</div>
-            </div>
+    <div class="container" style="padding-top: 110px;">
+        <div class="form-container mx-auto">
+            <h2>Form Sponsor</h2>
+            <form id="formSponsor" novalidate>
+                <div class="mb-3">
+                    <label for="namaSponsor" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="namaSponsor" required />
+                    <div class="invalid-feedback">Nama harus diisi.</div>
+                </div>
 
-            <div class="mb-3">
-                <label for="jenisSponsor" class="form-label">Pilih Bentuk Sponsor</label>
-                <select class="form-select" id="jenisSponsor" required>
-                    <option value="">-- Pilih --</option>
-                    <option value="dana">Dana</option>
-                    <option value="logistik">Logistik</option>
-                    <option value="media">Media Partner</option>
-                    <option value="lainnya">Lainnya</option>
-                </select>
-                <div class="invalid-feedback">Pilih salah satu jenis sponsor.</div>
-            </div>
+                <div class="mb-3">
+                    <label for="emailSponsor" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailSponsor" required />
+                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                </div>
 
-            <!-- Input Lainnya -->
-            <div class="mb-3" id="lainnyaInputWrapper">
-                <label for="jenisSponsorLain" class="form-label">Sebutkan Bentuk Sponsor Lainnya</label>
-                <input type="text" class="form-control" id="jenisSponsorLain" />
-                <div class="invalid-feedback">Mohon isi bentuk sponsor lainnya.</div>
-            </div>
+                <div class="mb-3">
+                    <label for="teleponSponsor" class="form-label">No. Telepon</label>
+                    <input type="tel" class="form-control" id="teleponSponsor" pattern="[0-9]{10,15}" required />
+                    <div class="invalid-feedback">Masukkan nomor telepon yang benar (10–15 digit).</div>
+                </div>
 
-            <div class="mb-4 form-check">
-                <input class="form-check-input" type="checkbox" id="setuju" required />
-                <label class="form-check-label" for="setuju"></label>Saya bersedia menjadi sponsor dan dihubungi oleh
-                panitia.</label>
-                <div class="invalid-feedback">Anda harus menyetujui ini.</div>
-            </div>
+                <div class="mb-3">
+                    <label for="jenisSponsor" class="form-label">Pilih Bentuk Sponsor</label>
+                    <select class="form-select" id="jenisSponsor" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="dana">Dana</option>
+                        <option value="logistik">Logistik</option>
+                        <option value="media">Media Partner</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                    <div class="invalid-feedback">Pilih salah satu jenis sponsor.</div>
+                </div>
 
-            <button type="submit" class="btn btn-sponsor w-100">Kirim</button>
-        </form>
+                <!-- Input Lainnya -->
+                <div class="mb-3" id="lainnyaInputWrapper">
+                    <label for="jenisSponsorLain" class="form-label">Sebutkan Bentuk Sponsor Lainnya</label>
+                    <input type="text" class="form-control" id="jenisSponsorLain" />
+                    <div class="invalid-feedback">Mohon isi bentuk sponsor lainnya.</div>
+                </div>
+
+                <div class="mb-4 form-check">
+                    <input class="form-check-input" type="checkbox" id="setuju" required />
+                    <label class="form-check-label" for="setuju">
+                        Saya bersedia menjadi sponsor dan dihubungi oleh panitia.
+                    </label>
+                    <div class="invalid-feedback">Anda harus menyetujui ini.</div>
+                </div>
+
+                <button type="submit" class="btn btn-sponsor w-100">Kirim</button>
+            </form>
+        </div>
     </div>
 
     <!-- Modal Popup -->
@@ -76,41 +101,41 @@
         </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    const jenisSponsor = document.getElementById("jenisSponsor");
-    const lainnyaInputWrapper = document.getElementById("lainnyaInputWrapper");
-    const jenisSponsorLain = document.getElementById("jenisSponsorLain");
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const jenisSponsor = document.getElementById("jenisSponsor");
+        const lainnyaInputWrapper = document.getElementById("lainnyaInputWrapper");
+        const jenisSponsorLain = document.getElementById("jenisSponsorLain");
 
-    jenisSponsor.addEventListener("change", function () {
-        if (this.value === "lainnya") {
-            lainnyaInputWrapper.classList.add("show");
-            jenisSponsorLain.setAttribute("required", "required");
-        } else {
-            lainnyaInputWrapper.classList.remove("show");
-            jenisSponsorLain.removeAttribute("required");
-            jenisSponsorLain.value = "";
-        }
-    });
+        jenisSponsor.addEventListener("change", function () {
+            if (this.value === "lainnya") {
+                lainnyaInputWrapper.classList.add("show");
+                jenisSponsorLain.setAttribute("required", "required");
+            } else {
+                lainnyaInputWrapper.classList.remove("show");
+                jenisSponsorLain.removeAttribute("required");
+                jenisSponsorLain.value = "";
+            }
+        });
 
-    const formSponsor = document.getElementById("formSponsor");
+        const formSponsor = document.getElementById("formSponsor");
 
-    formSponsor.addEventListener("submit", function (e) {
-        e.preventDefault();
-        if (!formSponsor.checkValidity()) {
-            formSponsor.classList.add("was-validated");
-        } else {
-            const modal = new bootstrap.Modal(document.getElementById("popupTerimaKasih"));
-            modal.show();
-            formSponsor.reset();
-            formSponsor.classList.remove("was-validated");
-        }
-    });
+        formSponsor.addEventListener("submit", function (e) {
+            e.preventDefault();
+            if (!formSponsor.checkValidity()) {
+                formSponsor.classList.add("was-validated");
+            } else {
+                const modal = new bootstrap.Modal(document.getElementById("popupTerimaKasih"));
+                modal.show();
+                formSponsor.reset();
+                formSponsor.classList.remove("was-validated");
+            }
+        });
 
-    document.getElementById("btnTutup").addEventListener("click", function () {
-        window.location.href = "index.html"; // ke halaman beranda
-    });
-</script>
+        document.getElementById("btnTutup").addEventListener("click", function () {
+            window.location.href = "index.html"; // ke halaman beranda
+        });
+    </script>
 </body>
 
 </html>
